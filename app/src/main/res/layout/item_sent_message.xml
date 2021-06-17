@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+    <TextView
+        android:id="@+id/messageText"
+        style="@style/TextAppearance_ItemDialog_MessageText_Sent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/space_1x"
+        android:layout_marginEnd="@dimen/space_2x"
+        android:background="@drawable/income_dialog"
+        android:paddingLeft="@dimen/chat_message_text_padding"
+        android:paddingTop="@dimen/space_1x"
+        android:paddingBottom="@dimen/space_1x"
+        android:paddingRight="@dimen/chat_message_text_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="Comment with a huge text separating everything and keeping the design nice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
